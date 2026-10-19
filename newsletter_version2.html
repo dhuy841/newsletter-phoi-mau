@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Trello Newsletter — Elegant & Warm</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #3D315B;
+      --secondary-color: #D97757;
+      --accent-color: #F3E9D7;
+      --page-bg: #F7F3EE;
+      --surface: #FFFCF8;
+      --text-color: #302A35;
+      --muted-color: #746B73;
+      --button-hover: #B95C40;
+      --border-color: #E9DED2;
+    }
+    * { box-sizing:border-box; }
+    body { background:var(--page-bg); color:var(--text-color); font-family:Georgia, "Times New Roman", serif; }
+    .newsletter { max-width:900px; background:var(--surface); border:1px solid var(--border-color); }
+    .topline { height:7px; background:var(--secondary-color); }
+    .brand-mark { display:inline-flex; align-items:center; justify-content:center; width:42px; height:42px; border-radius:50%; background:var(--primary-color); color:white; font-family:Arial,sans-serif; font-weight:800; font-size:1.2rem; }
+    .brand-name { font-family:Arial,sans-serif; font-size:1.45rem; font-weight:800; letter-spacing:-.04em; color:var(--primary-color); }
+    .eyebrow { color:var(--secondary-color); font-family:Arial,sans-serif; font-size:.75rem; font-weight:800; letter-spacing:.14em; text-transform:uppercase; }
+    .hero { background:var(--primary-color); color:#fff9F1; position:relative; overflow:hidden; }
+    .hero::after { content:""; position:absolute; width:250px; height:250px; border:1px solid rgba(243,233,215,.4); border-radius:50%; right:-75px; top:-100px; box-shadow:0 0 0 22px rgba(243,233,215,.05),0 0 0 48px rgba(243,233,215,.04); }
+    .hero h1 { font-size:clamp(2.2rem,5vw,3.5rem); line-height:1.05; font-weight:700; letter-spacing:-.04em; }
+    .hero p { color:#E9DFEF; max-width:540px; font-size:1.08rem; }
+    .btn-newsletter { background:var(--secondary-color); border:1px solid var(--secondary-color); color:#fff; font-family:Arial,sans-serif; font-weight:700; border-radius:4px; padding:.85rem 1.25rem; }
+    .btn-newsletter:hover { background:var(--button-hover); border-color:var(--button-hover); color:#fff; }
+    .feature-card { border:1px solid var(--border-color); background:#FFFCF8; height:100%; overflow:hidden; }
+    .feature-art { min-height:145px; display:flex; align-items:center; justify-content:center; background:var(--accent-color); }
+    .art-board { width:72%; padding:14px; background:#FFFCF8; border:1px solid #E4D6C7; box-shadow:8px 8px 0 rgba(61,49,91,.1); }
+    .art-line { height:8px; background:#E5D6C5; margin:9px 0; }
+    .art-line.short { width:55%; background:var(--secondary-color); }
+    .art-chip { display:inline-block; width:34px; height:12px; background:var(--primary-color); margin-right:5px; }
+    .feature-card h3 { font-size:1.25rem; font-weight:700; }
+    .muted { color:var(--muted-color); }
+    .section-heading { font-weight:700; letter-spacing:-.035em; }
+    .tip-box { background:#F3E9D7; border-top:4px solid var(--secondary-color); }
+    .footer { background:#EEE5DA; color:var(--muted-color); }
+    a { color:var(--primary-color); }
+    @media (max-width:575px) { .hero { padding:2rem 1.35rem!important; } .newsletter { border-radius:0!important; } }
+  </style>
+</head>
+<body>
+  <main class="container py-4 py-md-5">
+    <article class="newsletter mx-auto overflow-hidden shadow-sm">
+      <div class="topline"></div>
+      <header class="d-flex align-items-center justify-content-between flex-wrap gap-3 px-4 px-md-5 py-4">
+        <div class="d-flex align-items-center gap-2"><span class="brand-mark">T</span><span class="brand-name">trello</span></div>
+        <span class="small muted" style="font-family:Arial,sans-serif">THE THOUGHTFUL WORKLETTER · NO. 08</span>
+      </header>
+
+      <section class="hero p-4 p-md-5">
+        <div class="eyebrow mb-3" style="color:#F0B49F">A more intentional way to work</div>
+        <h1 class="mb-3">Less noise.<br>More meaningful work.</h1>
+        <p class="mb-4">Thoughtful ideas for creating focus, building better habits, and making space for the work that matters.</p>
+        <a class="btn btn-newsletter" href="#highlights">Read the edition <span aria-hidden="true">→</span></a>
+      </section>
+
+      <section class="px-4 px-md-5 py-5">
+        <div class="eyebrow mb-2">A note from Trello</div>
+        <h2 class="section-heading mb-3">Clarity is a quiet kind of power.</h2>
+        <p class="muted mb-0">Great collaboration doesn't have to feel complicated. A shared view of priorities, thoughtful routines, and room to focus can help a team make steady progress—without adding more noise to the day.</p>
+      </section>
+
+      <section id="highlights" class="px-4 px-md-5 pb-5">
+        <div class="mb-4"><div class="eyebrow mb-2">In this edition</div><h2 class="section-heading mb-0">A few ideas to take with you</h2></div>
+        <div class="row g-3">
+          <div class="col-md-6">
+            <article class="feature-card">
+              <div class="feature-art"><div class="art-board"><span class="art-chip"></span><span class="art-chip" style="background:#D97757"></span><div class="art-line"></div><div class="art-line short"></div><div class="art-line"></div></div></div>
+              <div class="p-4"><div class="eyebrow mb-2">Perspective</div><h3>Give every project a next step</h3><p class="muted mb-3">A clear, small action makes a large goal feel less distant and easier to begin.</p><a href="#tip" class="fw-bold text-decoration-none">Explore the idea →</a></div>
+            </article>
+          </div>
+          <div class="col-md-6">
+            <article class="feature-card">
+              <div class="feature-art" style="background:#E8DCCB"><div class="art-board" style="transform:rotate(2deg)"><div class="art-line short"></div><div class="art-line" style="background:#3D315B"></div><div class="art-line"></div><div class="art-line short"></div></div></div>
+              <div class="p-4"><div class="eyebrow mb-2">Rituals</div><h3>Make reflection part of the week</h3><p class="muted mb-3">A regular pause helps teams notice what is working and what deserves a change.</p><a href="#tip" class="fw-bold text-decoration-none">Find your rhythm →</a></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="tip" class="px-4 px-md-5 pb-5">
+        <div class="tip-box p-4 p-md-4">
+          <div class="eyebrow mb-2">A small practice</div>
+          <h2 class="h4 fw-bold">Protect ten minutes for clarity.</h2>
+          <p class="muted mb-3">Review what is finished, decide what deserves attention next, and make blockers visible. A short reset can give the rest of your day a calmer direction.</p>
+          <a href="https://trello.com/" class="btn btn-newsletter">Visit Trello <span aria-hidden="true">→</span></a>
+        </div>
+      </section>
+
+      <footer class="footer text-center px-4 px-md-5 py-4">
+        <div class="brand-name mb-2">trello</div>
+        <p class="small mb-2">A little more clarity for the work ahead.</p>
+        <p class="small mb-0">Sample newsletter created for a UI color exercise.<br>© 2026 Trello Newsletter Concept</p>
+      </footer>
+    </article>
+    <p class="text-center small muted mt-3 mb-0" style="font-family:Arial,sans-serif">Version 2 · Elegant &amp; Warm · Palette: #3D315B / #D97757 / #F3E9D7</p>
+  </main>
+</body>
+</html>
